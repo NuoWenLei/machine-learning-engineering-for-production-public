@@ -4,13 +4,11 @@ from typing import List
 from fastapi import FastAPI
 from pydantic import BaseModel, conlist
 
-# change comment
-# change comment 2
 
 app = FastAPI(title="Predicting Wine Class with batching")
 
 # Open classifier in global scope
-with open("models/wine.pkl", "rb") as file:
+with open("models/wine=95.pkl", "rb") as file:
     clf = pickle.load(file)
 
 
